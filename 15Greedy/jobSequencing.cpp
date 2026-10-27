@@ -22,3 +22,15 @@ int jobSequencing(vector<pair<int, int>> jobs){
     }
     return profit;
 }
+
+
+int main (){
+    vector<pair<int, int>> jobs(4, make_pair(0, 0));
+
+    jobs[0] = make_pair(4, 20);
+    jobs[1] = make_pair(1, 40);
+    jobs[2] = make_pair(1, 40);
+    jobs[3] = make_pair(1, 30);
+
+    cout<<jobSequencing(jobs);
+}
